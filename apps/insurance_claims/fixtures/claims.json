@@ -1,0 +1,73 @@
+[
+  {
+    "case_id": "CL-2048",
+    "party_id": "P9",
+    "case_type": "healthcare",
+    "created_at": "2026-01-12",
+    "status": "denied",
+    "summary": "Healthcare claim denied due to missing pathology report and office note",
+    "denial_reason": "the review file did not include the pathology report and the treating provider office note",
+    "documents_needed": [
+      "pathology report",
+      "office note"
+    ],
+    "appeal_deadline": "2026-03-18",
+    "expected_reimbursement_amount": "0.00",
+    "allowed_max_amount": "1450.00",
+    "net_pay": "0.00",
+    "net_fee": "1450.00"
+  },
+  {
+    "case_id": "CL-2011",
+    "party_id": "P9",
+    "case_type": "healthcare",
+    "created_at": "2025-01-28",
+    "status": "closed",
+    "summary": "Healthcare claim settled",
+    "expected_reimbursement_amount": "780.00",
+    "allowed_max_amount": "800.00",
+    "net_pay": "780.00",
+    "net_fee": "800.00"
+  },
+  {
+    "case_id": "CL-1899",
+    "party_id": "P9",
+    "case_type": "dental",
+    "created_at": "2025-11-03",
+    "status": "closed",
+    "summary": "Dental claim completed",
+    "expected_reimbursement_amount": "425.00",
+    "allowed_max_amount": "450.00",
+    "net_pay": "425.00",
+    "net_fee": "450.00"
+  },
+  {
+    "case_id": "CL-2102",
+    "party_id": "P9",
+    "case_type": "auto",
+    "created_at": "2026-02-28",
+    "status": "open",
+    "summary": "Auto claim in progress",
+    "expected_reimbursement_amount": "3200.00",
+    "allowed_max_amount": "3500.00",
+    "net_pay": "0.00",
+    "net_fee": "3500.00"
+  },
+  {
+    "case_id": "CL-3001",
+    "party_id": "P12",
+    "case_type": "healthcare",
+    "created_at": "2026-03-01",
+    "status": "denied",
+    "summary": "Healthcare claim denied because the diagnosis report is missing",
+    "denial_reason": "the submitted materials did not include the treating provider diagnosis report",
+    "documents_needed": [
+      "diagnosis report"
+    ],
+    "appeal_deadline": "2026-04-15",
+    "expected_reimbursement_amount": "0.00",
+    "allowed_max_amount": "1200.00",
+    "net_pay": "0.00",
+    "net_fee": "1200.00"
+  }
+]

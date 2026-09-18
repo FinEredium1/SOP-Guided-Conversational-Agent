@@ -1,0 +1,8 @@
+{
+  "default": {
+    "status_sequence": ["pending", "approved"]
+  },
+  "timeout": {
+    "status_sequence": ["pending", "pending", "pending", "pending", "pending"]
+  }
+}

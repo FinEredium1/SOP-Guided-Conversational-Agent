@@ -1,0 +1,28 @@
+{
+  "notes": [
+    "This file documents the meaning of claim fields used by the insurance audio agent demo.",
+    "Monetary amounts in sample data are stored as decimal strings in USD for readability and deterministic fixture handling."
+  ],
+  "field_descriptions": {
+    "expected_reimbursement_amount": {
+      "type": "string",
+      "example": "780.00",
+      "description": "Expected payment from the insurance company. Used in practice management systems (PMS) to compare with actual payments during reconciliation."
+    },
+    "allowed_max_amount": {
+      "type": "string",
+      "example": "800.00",
+      "description": "The maximum amount an in-network insurer will pay for a covered service, which dictates the expected payment."
+    },
+    "net_pay": {
+      "type": "string",
+      "example": "780.00",
+      "description": "The finalized amount the insurer paid for the claim."
+    },
+    "net_fee": {
+      "type": "string",
+      "example": "800.00",
+      "description": "In some systems, the fee schedule rate adjusted for expected contractual obligations."
+    }
+  }
+}

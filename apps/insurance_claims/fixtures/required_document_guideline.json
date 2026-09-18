@@ -1,0 +1,158 @@
+{
+  "default_guidance": {
+    "en": "Use the member portal or claim upload link first when possible. Each file should be legible and complete, with claim-identifying details, relevant dates, and the issuing provider, facility, shop, or record source visible where applicable. If online upload is not available, support can help arrange fax or mail submission."
+  },
+  "case_type_guidance": {
+    "healthcare": {
+      "en": "For medical claims, include the treating provider or facility name on each page when available."
+    },
+    "auto": {
+      "en": "For auto claims, keep the repair estimate and the accident photos tied to the same incident so the reviewer can match the visible damage to the quote."
+    }
+  },
+  "document_guidance": {
+    "supplemental accident scene photos": {
+      "en": "The accident photos should show the damaged area clearly and include a wider shot that helps identify the vehicle and the scene. If available, include multiple angles and make sure the license plate or another vehicle identifier can still be recognized."
+    },
+    "repair estimate": {
+      "en": "The repair estimate should list the vehicle or claim reference, the damaged parts or labor items, and the quoted amount. A shop name and contact information are also helpful when available."
+    },
+    "original pathology report": {
+      "en": "The pathology report should include the patient name, specimen details, testing date, and the clinician or lab signature if one exists. A high-quality scan is acceptable only if the report is complete and fully readable; if the plan requires the original, the member portal instructions or support team should confirm the mailing address."
+    },
+    "treating provider office note": {
+      "en": "The office note should show the patient name, visit date, assessment, and treatment or follow-up recommendation. Upload all pages together in one PDF when possible."
+    }
+  },
+  "document_alternative_guidance": {
+    "default": {
+      "en": "If the exact item is not available yet, the best next step is to request a replacement copy from the provider, facility, lab, or repair shop first. If you only have a partial substitute for now, submit that together with a short note explaining what is still pending, so the file can be reviewed without losing track of the missing item."
+    },
+    "supplemental accident scene photos": {
+      "en": "If you do not have scene photos, first submit any later damage photos, the repair estimate, and any police or incident report that ties the damage to the same event. A short written note with the date, location, and what happened can help. If those materials are also unavailable, a human claims representative should review what other proof may be accepted."
+    },
+    "repair estimate": {
+      "en": "If you do not have the repair estimate yet, the usual next step is to ask the body shop or repair facility for a written estimate that lists the damaged parts, labor, and quoted amount. If repairs have not started, another licensed shop estimate or an adjuster estimate may still help support the file. If no estimate is available at all, a human claims representative should review the file with you."
+    },
+    "original pathology report": {
+      "en": "If the original pathology report is missing, first ask the hospital, lab, or treating provider for a replacement copy or for the report to be resent directly. A complete readable scan or certified copy is often the best interim substitute while the mailing requirement is clarified. If the provider cannot reissue it and you do not have any readable copy, a human representative should review manual options with you."
+    },
+    "treating provider office note": {
+      "en": "If you cannot get the full office note immediately, ask the clinic for a complete visit summary, discharge paperwork, or a re-sent copy of the chart. If the provider can fax or upload the note directly, that is often the cleanest option. If none of those are available, a human representative should review what other clinical records may be acceptable."
+    }
+  },
+  "claim_followup_settings": {
+    "average_processing_time_after_submission": {
+      "en": "usually less than a week"
+    },
+    "human_review_after_document_alternatives_exhausted": {
+      "en": "If the caller still cannot provide the requested item or any reasonable substitute after checking with the provider, lab, clinic, repair shop, or incident records, a human claims representative should review the file for manual options."
+    }
+  },
+  "claim_followup_guidance": [
+    {
+      "topic": "missing_required_material_alternatives",
+      "intent_hints": [
+        "document_submission",
+        "next_steps",
+        "denial_question",
+        "general_claim_question",
+        "status_inquiry"
+      ],
+      "requires_documents": true,
+      "en": "For claim {case_id}, if the exact requested item is not available, start with a replacement copy or the closest supporting records that still tie the claim back to the same treatment or incident. If none of the reasonable alternatives can be obtained, a human claims representative should review the file with you."
+    },
+    {
+      "topic": "submission_timing",
+      "intent_hints": [
+        "document_submission",
+        "next_steps",
+        "denial_question"
+      ],
+      "requires_documents": true,
+      "match_any": [
+        "how soon do i need to submit",
+        "how soon do i need to send",
+        "when do i need to submit",
+        "when do i need to send",
+        "when should i submit",
+        "when should i send"
+      ],
+      "en": "For claim {case_id}, please submit {documents} within a week."
+    },
+    {
+      "topic": "processing_time_after_submission",
+      "intent_hints": [
+        "document_submission",
+        "next_steps",
+        "status_inquiry",
+        "general_claim_question"
+      ],
+      "requires_documents": true,
+      "match_any": [
+        "how long",
+        "how soon",
+        "processing time",
+        "review time",
+        "once i submit",
+        "after i submit",
+        "after i send",
+        "after you receive",
+        "how long does it take"
+      ],
+      "en": "Once the missing files for claim {case_id} are received, the review usually restarts rather than finishing instantly. The average processing time is {average_processing_time_after_submission}, although intake and another review cycle can still be needed before the status is updated. If {documents} are incomplete or unclear, the team may ask for more information before reconsidering the denial."
+    },
+    {
+      "topic": "submission_method",
+      "intent_hints": [
+        "document_submission"
+      ],
+      "requires_documents": true,
+      "match_any": [
+        "how do i submit",
+        "where do i submit",
+        "where should i send",
+        "how should i send",
+        "portal",
+        "upload link"
+      ],
+      "en": "For claim {case_id}, the best starting point is usually the member portal or the claim upload link so {documents} stay attached to the file. If online upload is not available, support can help arrange fax or mail handling."
+    },
+    {
+      "topic": "file_format_requirements",
+      "intent_hints": [
+        "document_submission"
+      ],
+      "requires_documents": true,
+      "match_any": [
+        "format",
+        "file type",
+        "photo",
+        "scan",
+        "pdf",
+        "image",
+        "clear enough",
+        "pdf"
+      ],
+      "en": "For claim {case_id}, each upload should be clear, complete, and easy to review. Prepare the currently requested files according to their own requirements: {documents}. If a specific document has more detailed guidance, that document-specific guidance should control."
+    },
+    {
+      "topic": "receipt_confirmation",
+      "intent_hints": [
+        "document_submission",
+        "next_steps"
+      ],
+      "requires_documents": true,
+      "match_any": [
+        "how do i know you got it",
+        "will i get confirmation",
+        "confirm receipt",
+        "show up in status"
+      ],
+      "en": "After you upload the missing files for claim {case_id}, there can be a short intake delay before the status reflects the update. If the claim still looks unchanged after a few business days, support can check whether {documents} were attached correctly."
+    }
+  ],
+  "claim_followup_fallback": {
+    "en": "I do not see a separate claim-specific rule for that follow-up. A reasonable expectation is that once the missing files are received and readable, the claim goes back into review and may still need another review cycle before the status changes."
+  }
+}

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Claims Guide</title>
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="sidebar">
+        <div>
+          <p class="eyebrow">Protected support</p>
+          <h1>Claims Guide</h1>
+          <p class="subtitle">A conversational agent that stays inside the SOP.</p>
+        </div>
+
+        <section aria-labelledby="progress-title">
+          <h2 id="progress-title">Conversation progress</h2>
+          <ol class="phase-list" id="phase-list">
+            <li data-phase="VERIFY_ID"><span>1</span><div><strong>Verify identity</strong><small>Protect claim data</small></div></li>
+            <li data-phase="RESOLVE_INTENT"><span>2</span><div><strong>Resolve intent</strong><small>Find the right claim</small></div></li>
+            <li data-phase="PROCESS_CASE"><span>3</span><div><strong>Process case</strong><small>Use grounded records</small></div></li>
+            <li data-phase="POST_PROCESS"><span>4</span><div><strong>Wrap up</strong><small>Email or skip summary</small></div></li>
+          </ol>
+        </section>
+
+        <details class="settings">
+          <summary>Model settings</summary>
+          <label for="provider">Provider</label>
+          <select id="provider">
+            <option value="deepseek" selected>DeepSeek</option>
+            <option value="openai">OpenAI</option>
+            <option value="custom">Other compatible API</option>
+            <option value="server">Use server environment</option>
+          </select>
+          <label for="api-key">API key</label>
+          <input id="api-key" type="password" autocomplete="off" placeholder="Provider API key" />
+          <label for="model-name">Model</label>
+          <input id="model-name" type="text" autocomplete="off" placeholder="deepseek-flash" />
+          <div id="custom-url-row" hidden>
+            <label for="base-url">HTTPS base URL</label>
+            <input id="base-url" type="url" autocomplete="off" placeholder="https://api.example.com/v1" />
+          </div>
+          <button class="apply-model" id="apply-model" type="button">Apply model settings</button>
+          <p class="model-status" id="model-status" role="status"></p>
+          <p>The key is sent only with your chat request and is not stored by this demo.</p>
+        </details>
+
+        <button class="secondary" id="new-chat" type="button">Start new conversation</button>
+      </aside>
+
+      <section class="chat-panel">
+        <header class="chat-header">
+          <div>
+            <span class="status-dot" aria-hidden="true"></span>
+            <strong>Insurance support</strong>
+          </div>
+          <span class="mode-badge" id="mode-badge">Ready</span>
+        </header>
+
+        <div class="messages" id="messages" aria-live="polite"></div>
+
+        <div class="sample-row">
+          <button id="sample-message" type="button">Use Margaret test case</button>
+        </div>
+
+        <form class="composer" id="chat-form">
+          <label class="sr-only" for="message-input">Message</label>
+          <textarea id="message-input" rows="1" placeholder="Tell me how I can help…" maxlength="4000"></textarea>
+          <button class="send" id="send-button" type="submit" aria-label="Send message">Send</button>
+        </form>
+        <p class="disclaimer">Demo only. No real claim changes or emails are sent.</p>
+      </section>
+    </main>
+    <script src="/assets/app.js" defer></script>
+  </body>
+</html>
