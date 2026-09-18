@@ -1,5 +1,9 @@
 # SOP-Guided Insurance Claims Agent
 
+## Live demo
+
+**[Open the deployed Claims Guide](https://sop-guided-conversational-agent-dywx.onrender.com/)**
+
 A conversational insurance claims demo that combines a strict, application-controlled standard operating procedure with flexible language-model interpretation and response phrasing.
 
 The workflow always follows:
